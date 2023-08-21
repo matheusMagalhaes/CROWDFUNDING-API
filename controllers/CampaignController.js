@@ -1,4 +1,4 @@
-const campaingModel = require('../models/CampaingModels');
+const campaingModel = require('../models/CampaignModels');
 
 async function getAll (req, res){
   const campaings = await campaingModel.getAll();
