@@ -42,16 +42,7 @@ async function donate (donation) {
 }
 
 
-
-// const deleteDonation = async(id) =>{
-//   const deletedDonation  = await connection.execute('DELETE FROM CROWDFUNDING.CAMPAING WHERE ID = ? ', [id]);
-
-//   return deletedDonation;
-// };
-
-
 module.exports = {
   getAll,
   donate,
-  // deleteDonation,
 };

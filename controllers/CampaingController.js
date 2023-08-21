@@ -4,8 +4,7 @@ async function getAll (req, res){
   const campaings = await campaingModel.getAll();
 
   return res.status(200).json(campaings);
-};
-
+}
 
 async function donate(req, res) {
   
@@ -19,20 +18,7 @@ async function donate(req, res) {
   }
 }
 
-
-// const deleteDonation = async(req, res) =>{
-//   const {id} = req.params;
-
-//   await campaingModel.deleteDonation(id);
-
-//   return res.status(204).json();
-// };
-
-
-
-
 module.exports = {
   getAll,
   donate,
-  deleteDonation,
 };
