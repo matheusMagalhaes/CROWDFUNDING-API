@@ -1,15 +1,15 @@
-const campaingModel = require('../models/CampaignModels');
+const campaignModel = require('../models/CampaignModels');
 
 async function getAll (req, res){
-  const campaings = await campaingModel.getAll();
+  const campaigns = await campaignModel.getAll();
 
-  return res.status(200).json(campaings);
+  return res.status(200).json(campaigns);
 }
 
 async function donate(req, res) {
   
   try {
-    const donated = await campaingModel.donate(req.body);
+    const donated = await campaignModel.donate(req.body);
 
     return res.status(201).json(donated);
   } catch (error) {
